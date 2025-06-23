@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Event Registration</title>
+  <title>Login Page</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
-    .container {
+    .login-container {
       background-color: #fff;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
     }
 
     h2 {
@@ -26,39 +26,11 @@
       margin-bottom: 20px;
     }
 
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button {
-      margin-top: 20px;
+    input[type="text"],
+    input[type="password"] {
       width: 100%;
       padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #ccc;
+     
     }
-
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h2>Event Registration</h2>
-    <form action="/submit-registration" method="post">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required
